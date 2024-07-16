@@ -2,7 +2,7 @@
 #### Computer Automated Measurement using Intel-OpenCV ( Open Source Computer Vision Library ) and HP-Google-Tesseract ( Optical Character Recognition ).
 #### Graphical User Interface using Python tkinter.
 #### Intel OpenCV ( Open Source Computer Vision Library ) 4.8.1.78
-#### HP Google Tesseract ( Optical Character Recognition ) 5.0.0.20190623
+#### HP Google Tesseract ( Optical Character Recognition ) 5.4.1
 #### Python tkinter 3.12.4
 #### 量表 ( Scale ) 數據識別, 使用 Intel OpenCV 和 HP Google Tesseract 和 Python tkinter 製作的, 計算機輔助測量 ( Computer Automated Measurement ) 的圖形化工具.
 ---
@@ -29,103 +29,51 @@ https://www.python.org/
 
 使用 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 説明 :
 
-一. 確保 Microsoft Window10 系統的 Edge 瀏覽器已全部關閉, 啓動 Microsoft Office Excel 應用.
+一. 項目 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 運行需要 Python 環境, 所以運行之前, 需對作業系統 ( Operating System ) 安裝配置 Python 環境成功方可.
 
-二. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/ 裏的 Microsoft Excel VBA 類模組 ( Class Modul ) : clsBrowser.cls , clsCore.cls , clsJsConverter.cls
+    可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 Python 環境 :
 
-三. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/ 裏的 Microsoft Excel VBA 窗體 ( Form ) : CrawlerControlPanel.frm , CrawlerControlPanel.frx
+    root@localhost:~# sudo apt install python3
 
-四. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/ 裏的 Microsoft Excel VBA 模組 ( Module ) : CrawlerDispatchModule.bas
+二. 首先需要下載安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包, 或者, 也可以將其配置保存在項目空間 : ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/ 文件夾裏.
 
-五. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/ 裏的 Microsoft Excel VBA 模組 ( Module ) : testCrawlerModule.bas
+    可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
-六. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/ 裏的 Microsoft Excel VBA 對象 ( Object ) : ThisWorkbook.cls
+    root@localhost:~# sudo apt install tesseract-ocr
 
-七. 啓動運行測試網站 :  root@localhost:~# /bin/node ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/server.js
+    或者, 首先, 在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 下載 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
-八. 運行 Microsoft Excel VBA 宏擴展應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 選擇 test 選項, 從 Microsoft Excel 應用的「加載項」菜單裏, 選擇 : 「 Focused Crawling 」 → 「 operation panel 」 → 「 test 」, 加載顯示 test 人機交互介面.
+    root@localhost:~# wget https://notesalexp.org/tesseract-ocr5/bionic/pool/main/t/tesseract/tesseract-ocr_5.3.0-1_amd64.deb
 
-九. 測試 Microsoft Excel VBA 宏擴展應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 操控讀取測試網站 testWeb 頁面顯示的資訊, 將讀取結果存儲在電子表格 ( Microsoft Excel ) 指定位置.
+    然後, 在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包, 將其配置保存在項目空間 : ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/ 文件夾裏 :
 
----
+    root@localhost:~# sudo dpkg-deb -R --unpack ./tesseract-ocr_5.3.0-1_amd64.deb ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/
 
-項目空間裏的電子表格 Microsoft Excel 檔 : 「 Crawler.xlsm 」 已經載入 :
+    可在 Window10 系統的控制臺命令列人機交互介面窗口 ( Windows-bat ) 使用如下指令, 下載 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
-第三方類模組 ( Class Modul ) : clsBrowser.cls , clsCore.cls , clsJsConverter.cls
+    C:\> wget https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.3.0.20221214.exe
 
-窗體 ( Form ) : CrawlerControlPanel.frm , CrawlerControlPanel.frx
+    然後, 在 Window10 系統的控制臺命令列人機交互介面窗口 ( Windows-bat ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
-模組 ( Module ) : CrawlerDispatchModule.bas , testCrawlerModule.bas
+    C:\> C:\tesseract-ocr-w64-setup-v5.3.0.20221214.exe
 
-對象 ( Object ) : ThisWorkbook.cls
+    若想調整保存路徑, 選擇將其安裝配置在項目空間 : ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/ 文件夾裏即可.
 
-可直接從 Microsoft Excel 應用的「加載項」菜單裏, 選擇 : 「 Focused Crawling 」 → 「 operation panel 」 → 「 test 」, 加載顯示 test 人機交互介面.
+三. 手動創建配置計算機程式設計語言 Python 解釋器 ( Interpreter ) 項目 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 的隔離環境 :
 
-祇需啓動運行測試網站 :  root@localhost:~# /bin/node ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/server.js
+    root@localhost:~# /usr/bin/python3 -m venv ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/
 
-之後即可測試 Microsoft Excel VBA 宏擴展應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 操控讀取測試網站 testWeb 頁面顯示的資訊, 將讀取結果存儲在電子表格 ( Microsoft Excel ) 指定位置.
+四. 激活計算機程式設計語言 Python 解釋器 ( Interpreter ) 的隔離環境 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 項目 :
 
----
+    root@localhost:~# ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/activate
 
-使用微軟電子表格 Microsoft Excel VBA 驅動瀏覽器 Microsoft Edge 宏應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 説明 :
+五. 手動配置計算機程式設計語言 Python 解釋器 ( Interpreter ) 的隔離環境 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 項目需要的第三方擴展包, 依照項目空間裏第三方擴展包的列表文檔 ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/packagelist.txt 安裝 :
 
-1. 項目架構執行序 :
+    root@localhost:~# ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/pip.exe install --requirement ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/packagelist.txt
 
-   1). 啓動 Microsoft Office Excel Professional 2019 應用, 電子表格 Excel 應用會自動運行已載入的模組 ( Module ) 和類模組 ( Class Modul ), 其中載入的調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 裏的自定義過程 ( Subroutine ) : MenuSetup() 會修改電子表格 Excel 的菜單欄 ( Menu Bar ) 向「 加載項 ( add-in ) 」菜單下寫入自定義的 Microsoft Excel VBA 宏擴展應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 標簽.
+六. 以上全部配置完畢, 即可在作業系統 ( Operating System : Linux-Ubuntu , Windows ) 的控制臺命令列人機交互介面窗口 ( Ubuntu-bash , Windows-bat ) 使用如下指令, 啓動運行 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 項目 :
 
-   2).     單擊電子表格 Excel 「 加載項 ( add-in ) 」菜單 ( Menu ) 下 Microsoft Excel VBA 宏擴展應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 標簽, 首先執行的是調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ).
-
-   3). 調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 調用操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ), 並讀取操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 裏的自定義配置參數值.
-
-   4). 同時, 調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 調用窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ), 並根據操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 裏的自定義配置參數值, 爲窗體 ( Form ) 介面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 賦初值, 窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 是人機交互介面.
-
-   5). 手動操控窗體 ( Form ) 介面使用瀏覽器 Microsoft Edge 打開待讀取資訊的目標網站頁面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/ ).
-
-   6). 首先, 窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 調用操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ).
-
-   7). 然後, 操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 引用第三方類模組 ( Class Modul ) : ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsBrowser.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsCore.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsJsConverter.cls ).
-
-   8). 最後, 第三方類模組 ( Class Modul ) : ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsBrowser.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsCore.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsJsConverter.cls ) 會驅動瀏覽器 Microsoft Edge 加載打開目標網站頁面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/ ).
-
-   9). 手動操控窗體 ( Form ) 介面, 啓動循環操控瀏覽器 Microsoft Edge 並讀取載入的目標網站頁面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/ ) 裏顯示的資訊.
-
-   10). 首先, 窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 調用操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ).
-
-   11). 然後, 操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 引用第三方類模組 ( Class Modul ) : ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsBrowser.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsCore.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsJsConverter.cls ).
-
-   12). 然後, 第三方類模組 ( Class Modul ) : ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsBrowser.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsCore.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsJsConverter.cls ) 會驅動瀏覽器 Microsoft Edge 翻頁, 並讀取載入的目標網站頁面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/ ) 顯示的資訊.
-
-   13). 然後, 操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 將讀取到的資訊, 回饋至窗體 ( Form ) 介面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 動態提示運行狀態.
-
-   14). 同時, 操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 讀取窗體 ( Form ) 介面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 裏自定義的保存位置參數值.
-
-   15). 最後, 操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 根據自定義的保存位置參數值, 將讀取到的資訊, 寫入電子表格 Excel 指定的位置存儲.
-
-2. 項目將自定義的操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 作爲獨立的一個模組 ( Module ) 設計, 目的是, 與調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 分開, 解耦合, 這樣便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面裏顯示的資訊.
-
-   同樣的, 項目將調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 作爲獨立的一個模組 ( Module ) 設計, 與窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 分開, 其目的也是爲了, 解耦合, 便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面裏顯示的資訊.
-
-   若不考慮日後的功能擴展, 可取消獨立的調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 設計, 將之全部功能, 整合入窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 裏, 這樣可降低項目架構的複雜性, 更易於理解.
-
-3. 若想擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面, 可新增複製 test/ 文件夾並重新命名, 保存路徑位於 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/ 文件夾裏, 重新命名並自定義修改文件夾 test/ 裏的模組 ( Module ) : testCrawlerModule.bas , 根據需要自定義修改設計編寫代碼脚本即可, 這一操作的目的, 是爲實現新增一組操作介面的效果, 例如像 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 類似的.
-
-   并且, 需要修改調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 裏的代碼, 使其可以正確找到調用自定義擴展新增的操作模組 ( Module ) 並正確的讀取適配合規的自定義擴展新增的配置參數初值, 例如像 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 類似的.
-
-   并且, 需要修改窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 裏的代碼, 使其可以正確適配合規的顯示自定義擴展新增的模組 ( Module )的配置參數值, 作爲人機交互介面, 可以正確的操控自定義擴展新增的模組 ( Module ) 引用第三方類模組 ( Class Modul ) : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 驅動 Microsoft Edge 瀏覽器, 例如像 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 類似的.
-
-4. 項目空間裏的文件夾 testWeb 祇是一組用於配合測試電子表格 Microsoft Excel VBA 驅動瀏覽器 Microsoft Edge 宏應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 框架基礎功能的網站頁面, 主要用於開發階段的測試之用, 當 focused-crawling-Microsoft-Office-Excel-VBA-Edge 的策略介面選擇 test 選項加載顯示 test 人機交互介面時, 才需要啓動運行 testWeb 伺服器, 定型之後生產階段則不再需要; 若不需要測試框架基礎功能, 可將文件夾 testWeb 刪除, 不會影響 電子表格 Microsoft Excel VBA 驅動瀏覽器 Microsoft Edge 宏應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 的功能.
-
-   伺服器 testWeb 運行需要 Node.js 環境, 所以運行之前, 需對作業系統 ( Operating System ) 安裝配置 Node.js 環境成功方可.
-
-   可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 Node.js 環境 :
-
-   root@localhost:~# sudo apt install nodejs
-
-   root@localhost:~# sudo apt install npm
-
-   可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 啓動運行 testWeb 伺服器 :
-
-   root@localhost:~# /bin/node ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/server.js
+    root@localhost:~# ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/python3.exe ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/main.py
 
 ![]()
 
@@ -141,223 +89,7 @@ Google-Pixel-6 Android-11 Termux-0.118 Linux-Ubuntu-22.04-LTS-rootfs Arm64-aarch
 
 ---
 
-Application :
-
-Microsoft Office Excel Professional 2019 x86_64
-
-Browser :
-
-Microsoft Internet Explorer ( Trident ) x86_64 version 11
-
-Microsoft Edge ( Chromium - Blink ) x86_64 version 126.0.2592.102
-
-Google Chrome ( Chromium - Blink ) x86_64 version 126.0.6478.127
-
-Mozilla Firefox ( Gecko ) x86_64 version 128.0 2024/07/09
-
-Interpreter :
-
-Node.js - version 20.15.0
-
-npm - version 10.7.0
-
----
-
-Application : Microsoft Office Excel Professional 2019
-
-[作業系統 ( Operating system ) 之 Microsoft Windows 官方網站](https://www.microsoft.com/zh-tw/windows): 
-https://www.microsoft.com/zh-tw/windows
-
-[電子表格應用 Microsoft Office Excel 官方下載頁](https://www.microsoft.com/zh-tw/download/office): 
-https://www.microsoft.com/zh-tw/download/office
-
-[電子表格應用 Microsoft Office Excel 2019 官方説明頁](https://learn.microsoft.com/zh-tw/deployoffice/office2019/overview): 
-https://learn.microsoft.com/zh-tw/deployoffice/office2019/overview
-
-使用 Microsoft Office Excel VBA 操作 Edge、Chrome、Firebox 瀏覽器, 使用 codeproject 網站提供的第三方擴展類模組 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 官方網站 :
-
-[第三方擴展類模組 VBA-JSON 官方 GitHub 網站倉庫](https://github.com/VBA-tools/VBA-JSON): 
-https://github.com/VBA-tools/VBA-JSON.git
-
-[第三方擴展類模組提供網站 codeproject 裏的 Automate Chrome or Edge using VBA 庫 ( Tips ) 官方説明頁](https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA): 
-https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
-
-[第三方擴展類模組 Chromium-Automation-with-CDP-for-VBA 官方 GitHub 網站倉庫](https://github.com/longvh211/Chromium-Automation-with-CDP-for-VBA): 
-https://github.com/longvh211/Chromium-Automation-with-CDP-for-VBA.git
-
-[第三方擴展類模組 Edge-IE-Mode-Automation-with-IES-for-VBA 官方 GitHub 網站倉庫](https://github.com/longvh211/Edge-IE-Mode-Automation-with-IES-for-VBA): 
-https://github.com/longvh211/Edge-IE-Mode-Automation-with-IES-for-VBA.git
-
-Browser : Microsoft Internet Explorer ( Trident )
-
-[瀏覽器 ( Browser ) 之 Microsoft Internet Explorer 下載官方網站](https://www.microsoft.com/en-za/download/internet-explorer.aspx): 
-https://www.microsoft.com/en-za/download/internet-explorer.aspx
-
-Browser : Microsoft Edge ( Chromium - Blink )
-
-[瀏覽器 ( Browser ) 之 Microsoft Edge 下載官方網站](https://www.microsoft.com/zh-tw/edge/download?form=MA13FJ): 
-https://www.microsoft.com/zh-tw/edge/download?form=MA13FJ
-
-[瀏覽器 ( Browser ) 之 Microsoft Edge 驅動 ( Driver ) 下載官方網站](https://developer.microsoft.com/zh-tw/microsoft-edge/tools/webdriver/?form=MA13LH): 
-https://developer.microsoft.com/zh-tw/microsoft-edge/tools/webdriver/?form=MA13LH
-
-Browser : Google Chrome ( Chromium - Blink )
-
-[瀏覽器 ( Browser ) 之 Google Chrome 下載官方網站](https://www.google.com/intl/zh-TW/chrome/dev/?standalone=1): 
-https://www.google.com/intl/zh-TW/chrome/dev/?standalone=1
-
-[瀏覽器 ( Browser ) 之 Google Chrome ( Chromium ) 開發人員版 ( dev ) 下載中文網站](https://www.google.cn/intl/zh-TW/chrome/dev/?standalone=1&system=true&statcb=1&installdataindex=empty&defaultbrowser=0): 
-https://www.google.cn/intl/zh-TW/chrome/dev/?standalone=1&system=true&statcb=1&installdataindex=empty&defaultbrowser=0
-
-[瀏覽器 ( Browser ) 之 Google Chrome 驅動 ( Driver ) 下載官方網站](https://chromedriver.storage.googleapis.com/index.html): 
-https://chromedriver.storage.googleapis.com/index.html
-
-[瀏覽器 ( Browser ) 之 Google Chrome 驅動 ( Driver ) 下載官方網站淘寶網鏡像源](https://npm.taobao.org/mirrors/chromedriver): 
-https://npm.taobao.org/mirrors/chromedriver
-
-Browser : Mozilla Firefox ( Gecko )
-
-[瀏覽器 ( Browser ) 之 Mozilla Firefox 下載官方網站](https://www.mozilla.org/zh-TW/firefox/): 
-https://www.mozilla.org/zh-TW/firefox/
-
-[瀏覽器 ( Browser ) 之 Mozilla Firefox 驅動 ( Driver ) 官方 GitHub 網站倉庫](https://github.com/mozilla/geckodriver): 
-https://github.com/mozilla/geckodriver.git
-
-[瀏覽器 ( Browser ) 之 Mozilla Firefox 驅動 ( Driver ) 預編譯二進位檔官方 GitHub 網站倉庫](https://github.com/mozilla/geckodriver/releases): 
-https://github.com/mozilla/geckodriver/releases
-
-[瀏覽器 ( Browser ) 之 Mozilla Firefox 驅動 ( Driver ) 官方説明頁](https://firefox-source-docs.mozilla.org/testing/geckodriver/): 
-https://firefox-source-docs.mozilla.org/testing/geckodriver/
-
-Interpreter : Node.js
-
-[程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方網站](https://node.js.org/): 
-https://node.js.org/
-
-[程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方網站](https://nodejs.org/en/): 
-https://nodejs.org/en/
-
-[程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方下載頁](https://nodejs.org/en/download/package-manager): 
-https://nodejs.org/en/download/package-manager
-
-[程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站賬戶](https://github.com/nodejs): 
-https://github.com/nodejs
-
-[程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站倉庫](https://github.com/nodejs/node): 
-https://github.com/nodejs/node.git
-
----
-
-瀏覽器 ( Browser : Microsoft Internet Explorer , Microsoft Edge , Google Chrome , Mozilla Firefox ) 和解釋器 ( Interpreter : Node.js ) 預編譯二進制可執行檔 [百度網盤(pan.baidu.com)](https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7) 下載頁: 
-https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7
-
-提取碼：1dm7
-
----
-
-![]()
-
----
-
-Python : Interface.py, application.py
-
-計算機程式設計語言 ( Python ) 解釋器 ( Interpreter ) 與作業系統 ( Operating System ) 環境配置釋明 :
-
-Title: Python server v20161211
-
-Explain: Python file server, Python http server, Python http client
-
-Operating System: Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30
-
-Interpreter: python-3.12.4-amd64.exe
-
-Interpreter: Python-3.12.4-tar.xz
-
-Operating System: Google-Pixel-7 Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 MSM8998-Snapdragon835-Qualcomm®-Kryo™-280
-
-Interpreter: Python-3.12.4-tar.xz
-
-使用説明:
-
-谷歌安卓系統 之 Termux 系統 之 烏班圖系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 )
-
-控制臺命令列 ( bash ) 運行啓動指令 :
-
-root@localhost:~# /usr/bin/python3 /home/Criss/py/application.py configFile=/home/Criss/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 Key=username:password Is_multi_thread=False number_Worker_process=0 is_Monitor_Concurrent=Multi-Threading is_monitor=False time_sleep=0.02 monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Python.txt temp_cache_IO_data_dir=/home/Criss/temp/
-
-微軟視窗系統 ( Window10 x86_64 )
-
-控制臺命令列 ( cmd ) 運行啓動指令 :
-
-C:\Criss> C:/Criss/Python/Python-3.12.4/python.exe C:/Criss/py/application.py configFile=C:/Criss/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 Key=username:password Is_multi_thread=False number_Worker_process=0 is_Monitor_Concurrent=Multi-Threading is_monitor=False time_sleep=0.02 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Python.txt temp_cache_IO_data_dir=C:/Criss/temp/
-
-控制臺啓動傳參釋意, 各參數之間以一個空格字符 ( SPACE ) ( 00100000 ) 分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符 ( = ) 連接, 即類比 Key=Value 的形式 :
-
-1. (必), (自定義), 安裝配置的程式設計語言 ( Python ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名, 預設值爲 :  C:/Criss/Python/Python-3.12.4/python.exe
-
-2. (必), (自定義), 語言 ( Python ) 程式代碼脚本 ( Script ) 檔 ( application.py ) 的存儲路徑全名, 預設值爲 :  C:/Criss/py/application.py
-
-   注意, 因爲「application.py」檔中脚本代碼需要加載引入「Interface.py」檔, 所以需要保持「application.py」檔與「Interface.py」檔在相同目錄下, 不然就需要手動修改「application.py」檔中有關引用「Interface.py」檔的加載路徑代碼, 以確保能正確引入「Interface.py」檔.
-
-3. (暫未做), (選), (鍵 configFile 固定, 值 C:/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=C:/Criss/config.txt
-
-4. (選), (鍵 interface_Function 固定, 值 file_Monitor 自定義, [ file_Monitor, http_Server, http_Client ] 取其一), 用於傳入選擇啓動哪一種接口服務, 外設硬盤 ( Hard Disk ) 文檔 ( File ) 作橋, 外設網卡 ( Network Interface Card ) 埠 ( Port ) 作橋, 預設值爲 :  interface_Function=file_Monitor
-
-以下是當參數 : interface_Function 取 : file_Monitor 值時, 可在控制臺命令列傳入的參數 :
-
-5. (選), (鍵 is_monitor 固定, 值 False 自定義, [ True, False ] 取其一), 用於判斷只運行一次, 還是保持文檔監聽, 預設值爲 :  is_monitor=False
-
-6. (選), (鍵 time_sleep 固定, 值 0.02 自定義), 用於傳入監聽文檔輪詢延遲時長，單位 ( Unit ) 爲秒 ( Second ), 預設值爲 :  time_sleep=0.02
-
-7. (選), (鍵 number_Worker_process 固定, 值 0 自定義), 用於傳入創建並發數目, 子進程 ( Sub Process ) 並發, 或者, 子缐程 ( Sub Threading ) 並發, 即, 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓並發架構, 預設值爲 :  number_Worker_process=0
-
-8. (選), (鍵 is_Monitor_Concurrent 固定, 值 Multi-Threading 自定義, 例如 [ 0, Multi-Threading, Multi-Processes ] 取其一), 用於選擇並發種類, 多進程 ( Process ) 並發, 或者, 多缐程 ( Threading ) 並發, 取 0 值表示不開啓並發架構, 預設值爲 :  is_Monitor_Concurrent=0
-
-9. (選), (鍵 monitor_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 用於接收傳值的媒介目錄 ( 監聽文件夾 ) 存儲路徑全名, 預設值爲 :  monitor_dir=C:/Criss/Intermediary/
-
-10. (選), (鍵 monitor_file 固定, 值 C:/Criss/Intermediary/intermediary_write_C.txt 自定義), 用於接收傳值的媒介文檔 ( 監聽文檔 ) 存儲路徑全名, 預設值爲 :  monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt
-
-11. (選), (鍵 output_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 用於輸出運算結果傳值的媒介目錄 ( 運算結果文檔儲存文件夾 ) 存儲路徑全名, 預設值爲 :  output_dir=C:/Criss/Intermediary/
-
-12. (選), (鍵 output_file 固定, 值 C:/Criss/Intermediary/intermediary_write_Nodejs.txt 自定義), 用於輸出運算結果傳值的媒介文檔 ( 運算結果輸出保存文檔 ) 存儲路徑全名, 預設值爲 :  output_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt
-
-13. (選), (鍵 temp_cache_IO_data_dir 固定, 值 C:/Criss/temp/ 自定義), 用於暫存傳入傳出數據的臨時媒介文件夾路徑全名, 預設值爲 :  temp_cache_IO_data_dir=C:/Criss/temp/
-
-以下是當參數 : interface_Function 取 : http_Server 值時, 可在控制臺命令列傳入的參數 :
-
-14. (選), (鍵 host 固定, 值 ::0 自定義, 例如 [ ::0, ::1, 0.0.0.0, 127.0.0.1 ] 取其一), 用於傳入伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::0
-
-15. (選), (鍵 port 固定, 值 10001 自定義), 用於傳入伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 自定義設定的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
-
-16. (選), (鍵 Key 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 用於傳入自定義的訪問網站驗證 ( Authorization ) 用戶名和密碼, 預設值爲 :  Key=username:password
-
-17. (選), (鍵 Is_multi_thread 固定, 值 False 自定義, 例如 [ True, False ] 取其一), 用於判斷是否開啓多缐程 ( Threading ) 並發, 預設值爲 :  Is_multi_thread=False
-
-18. (選), (鍵 number_Worker_process 固定, 值 0 自定義), 用於傳入創建並發數目, 子進程 ( Sub Process ) 並發, 或者, 子缐程 ( Sub Threading ) 並發, 即, 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓並發架構, 預設值爲 :  number_Worker_process=0
-
-19. (選), (鍵 webPath 固定, 值 C:/Criss/html/ 自定義), 用於傳入伺服器 ( http_Server ) 啓動運行的自定義的根目錄 (項目空間) 路徑全名, 預設值爲 :  webPath=C:/Criss/html/
-
-以下是當參數 : interface_Function 取 : http_Client 值時, 可在控制臺命令列傳入的參數 :
-
-14. (選), (鍵 host 固定, 值 ::1 自定義, 例如 [ ::1, 127.0.0.1, localhost ] 取其一), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::1
-
-15. (選), (鍵 port 固定, 值 10001 自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
-
-20. (選), (鍵 URL 固定, 值 / 自定義, 例如配置爲 http://[::1]:10001/index.html 值), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址, 萬維網統一資源定位系統 ( Uniform Resource Locator ) 地址字符串, 預設值爲 :  URL=/
-
-21. (選), (鍵 Method 固定, 值 POST 自定義, 例如 [ POST, GET ] 取其一), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的類型, 預設值爲 :  Method=POST
-
-22. (選), (鍵 time_out 固定, 值 0.5 自定義), 用於傳入設置鏈接超時自動中斷的時長，單位 ( Unit ) 爲秒 ( Second ), 預設值爲 :  time_out=0.5
-
-23. (選), (鍵 request_Auth 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的驗證 ( Authorization ) 的賬號密碼字符串, 預設值爲 :  request_Auth=username:password
-
-24. (選), (鍵 request_Cookie 固定, 其中 Cookie 名稱 Session_ID 可以設計爲固定, Cookie 值 request_Key->username:password 可以設計爲自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的 Cookies 值字符串, 預設值爲 :  request_Cookie=Session_ID=request_Key->username:password
-
-![]()
-
-Interpreter :
-
-python - 3.12.4
+Interpreter : python - 3.12.4
 
 [程式設計 Python 語言解釋器 ( Interpreter ) 官方網站](https://www.python.org/): 
 https://www.python.org/
@@ -370,3 +102,24 @@ https://github.com/python
 
 [程式設計 Python 語言解釋器 ( Interpreter ) 官方 GitHub 網站倉庫](https://github.com/python/cpython): 
 https://github.com/python/cpython.git
+
+Intel OpenCV ( Open Source Computer Vision Library ) - 4.8.1.78
+
+[作業系統 ( Operating system ) 之 Microsoft Windows 官方網站](https://www.microsoft.com/zh-tw/windows): 
+https://www.microsoft.com/zh-tw/windows
+
+HP Google Tesseract ( Optical Character Recognition ) - 5.4.1
+
+[作業系統 ( Operating system ) 之 Microsoft Windows 官方網站](https://www.microsoft.com/zh-tw/windows): 
+https://www.microsoft.com/zh-tw/windows
+
+---
+
+瀏覽器 ( Browser : Microsoft Internet Explorer , Microsoft Edge , Google Chrome , Mozilla Firefox ) 和解釋器 ( Interpreter : Node.js ) 預編譯二進制可執行檔 [百度網盤(pan.baidu.com)](https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7) 下載頁: 
+https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7
+
+提取碼：1dm7
+
+---
+
+![]()
