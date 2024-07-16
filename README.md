@@ -1,5 +1,5 @@
 ## Computer Automated Measurement , Optical Character Recognition
-#### Computer Automated Measurement using Intel-OpenCV ( Open Source Computer Vision Library ) HP-Google-Tesseract ( Optical Character Recognition ).
+#### Computer Automated Measurement using Intel-OpenCV ( Open Source Computer Vision Library ) and HP-Google-Tesseract ( Optical Character Recognition ).
 #### Graphical User Interface using Python tkinter.
 #### Intel OpenCV ( Open Source Computer Vision Library ) x86_64 version 4.8.1.78
 #### HP Google Tesseract ( Optical Character Recognition ) x86_64 version 5.0.0.20190623
