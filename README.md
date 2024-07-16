@@ -8,12 +8,17 @@
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
 使用計算機視覺 ( Optical Character Recognition ) 的方法, 識別量表 ( Scale ) 資訊, 使用計算機輔助測量 ( Computer Automated Measurement ) 的方法, 識別計算量表 ( Scale ) 測量值數據.
+
 其中, 量表 ( Scale ) 圖片 ( Image ) 降噪分割使用第三方 Intel OpenCV ( Open Source Computer Vision Library ) 工具包.
+
 其中, 量表 ( Scale ) 圖片 ( Image ) 識別使用第三方 HP Google Tesseract ( Optical Character Recognition ) 工具包.
+
 圖形化人機交互介面 ( Graphical User Interface ) 使用 Python tkinter 工具包.
 </p>
 
 ---
+
+使用 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 説明 :
 
 一. 確保 Microsoft Window10 系統的 Edge 瀏覽器已全部關閉, 啓動 Microsoft Office Excel 應用.
 
