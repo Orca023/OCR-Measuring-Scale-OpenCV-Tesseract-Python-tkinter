@@ -4,10 +4,10 @@
 #### Intel OpenCV ( Open Source Computer Vision Library ) 4.8.1.78
 #### HP Google Tesseract ( Optical Character Recognition ) 5.4.1
 #### Python tkinter 3.12.4
-#### 量表 ( Scale ) 數據識別, 使用 Intel OpenCV 和 HP Google Tesseract 和 Python tkinter 製作的, 計算機輔助測量 ( Computer Automated Measurement ) 的圖形化工具.
+#### 量表 ( Scale ) 數據識別, 使用 Intel OpenCV 和 HP Google Tesseract 和 Python tkinter 製作的, 計算機輔助測量 ( Computer Automated Measurement ) 的桌面工具.
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
-使用計算機視覺 ( Optical Character Recognition ) 的方法, 識別量表 ( Scale ) 資訊, 使用計算機輔助測量 ( Computer Automated Measurement ) 的方法, 識別計算量表 ( Scale ) 測量值數據.
+使用計算機視覺 ( Optical Character Recognition ) 的方法, 識別量表 ( Scale ) 圖片裏顯示的資訊, 使用計算機輔助測量 ( Computer Automated Measurement ) 的方法, 識別計算量表 ( Scale ) 圖片裏顯示的測量值數據.
 
 其中, 量表 ( Scale ) 圖片 ( Image ) 降噪分割使用第三方 Intel OpenCV ( Open Source Computer Vision Library ) 工具包.
 
@@ -110,12 +110,12 @@ https://www.microsoft.com/zh-tw/windows
 
 HP Google Tesseract ( Optical Character Recognition ) - 5.4.1
 
-[作業系統 ( Operating system ) 之 Microsoft Windows 官方網站](https://www.microsoft.com/zh-tw/windows): 
-https://www.microsoft.com/zh-tw/windows
+[圖形識別工具包 HP Google Tesseract ( Optical Character Recognition ) 官方網站](https://code.google.com/p/tesseract-ocr/): 
+https://code.google.com/p/tesseract-ocr/
 
 ---
 
-瀏覽器 ( Browser : Microsoft Internet Explorer , Microsoft Edge , Google Chrome , Mozilla Firefox ) 和解釋器 ( Interpreter : Node.js ) 預編譯二進制可執行檔 [百度網盤(pan.baidu.com)](https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7) 下載頁: 
+解釋器 ( Interpreter ) : Python 和圖形處理工具 : Intel OpenCV ( Open Source Computer Vision Library ) , HP Google Tesseract ( Optical Character Recognition ) 預編譯二進制可執行檔 [百度網盤(pan.baidu.com)](https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7) 下載頁: 
 https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7
 
 提取碼：1dm7
