@@ -1,9 +1,10 @@
 ## Computer Automated Measurement , Optical Character Recognition
-#### web power automate using Microsoft Office Excel VBA drive Edge browser.
-#### focused crawling using Microsoft Office Excel VBA drive Edge browser.
-#### Microsoft Office Excel Professional 2019 x86_64
-#### Microsoft Edge x86_64 version 126.0.2592.102 ( version > 103.0.1264.71 )
-#### 使用微軟電子表格宏 Excel-VBA 驅動 Edge 瀏覽器, 自動化操作網頁讀取資訊, 網頁定向爬蟲工具.
+#### Computer Automated Measurement using Intel-OpenCV ( Open Source Computer Vision Library ) HP-Google-Tesseract ( Optical Character Recognition ).
+#### Graphical User Interface using Python tkinter.
+#### Intel OpenCV ( Open Source Computer Vision Library ) x86_64 version 4.8.1.78
+#### HP Google Tesseract ( Optical Character Recognition ) x86_64 version 5.0.0.20190623
+#### Python tkinter 3.12.4
+#### 量表 ( Scale ) 數據識別, 使用 Intel OpenCV 和 HP Google Tesseract 和 Python tkinter 製作的, 計算機輔助測量 ( Computer Automated Measurement ) 的圖形化工具.
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter
