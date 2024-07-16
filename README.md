@@ -11,9 +11,18 @@
 
 其中, 量表 ( Scale ) 圖片 ( Image ) 降噪分割使用第三方 Intel OpenCV ( Open Source Computer Vision Library ) 工具包.
 
+[工具包 Intel OpenCV ( Open Source Computer Vision Library ) 官方網站](https://opencv.org/): 
+https://opencv.org/
+
 其中, 量表 ( Scale ) 圖片 ( Image ) 識別使用第三方 HP Google Tesseract ( Optical Character Recognition ) 工具包.
 
+[工具包 HP Google Tesseract ( Optical Character Recognition ) 官方網站](https://code.google.com/p/tesseract-ocr/): 
+https://code.google.com/p/tesseract-ocr/
+
 圖形化人機交互介面 ( Graphical User Interface ) 使用 Python tkinter 工具包.
+
+[程式設計語言 Python 解釋器 ( Interpreter ) 官方網站](https://www.python.org/): 
+https://www.python.org/
 </p>
 
 ---
