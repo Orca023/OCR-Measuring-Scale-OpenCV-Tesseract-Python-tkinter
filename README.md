@@ -31,49 +31,55 @@ https://www.python.org/
 
 1. 項目 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 運行需要 Python 環境, 所以運行之前, 需對作業系統 ( Operating System ) 安裝配置 Python 環境成功方可.
 
-    可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 Python 環境 :
+   可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 Python 環境 :
 
-    root@localhost:~# sudo apt install python3
+   root@localhost:~# sudo apt install python3
 
 2. 首先需要下載安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包, 或者, 也可以將其配置保存在項目空間 : ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/ 文件夾裏.
 
-    可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
+   可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
-    root@localhost:~# sudo apt install tesseract-ocr
+   root@localhost:~# sudo apt install tesseract-ocr
 
-    或者, 首先, 在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 下載 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
+   或者, 首先, 在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 下載 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
-    root@localhost:~# wget https://notesalexp.org/tesseract-ocr5/bionic/pool/main/t/tesseract/tesseract-ocr_5.3.0-1_amd64.deb
+   root@localhost:~# wget https://notesalexp.org/tesseract-ocr5/bionic/pool/main/t/tesseract/tesseract-ocr_5.3.0-1_amd64.deb
 
-    然後, 在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包, 將其配置保存在項目空間 : ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/ 文件夾裏 :
+   然後, 在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包, 將其配置保存在項目空間 : ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/ 文件夾裏 :
 
-    root@localhost:~# sudo dpkg-deb -R --unpack ./tesseract-ocr_5.3.0-1_amd64.deb ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/
+   root@localhost:~# sudo dpkg-deb -R --unpack ./tesseract-ocr_5.3.0-1_amd64.deb ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/
 
-    可在 Window10 系統的控制臺命令列人機交互介面窗口 ( Windows-bat ) 使用如下指令, 下載 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
+   可在 Window10 系統的控制臺命令列人機交互介面窗口 ( Windows-bat ) 使用如下指令, 下載 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
-    C:\> wget https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.3.0.20221214.exe
+   C:\> wget https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.3.0.20221214.exe
 
-    然後, 在 Window10 系統的控制臺命令列人機交互介面窗口 ( Windows-bat ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
+   然後, 在 Window10 系統的控制臺命令列人機交互介面窗口 ( Windows-bat ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
-    C:\> C:\tesseract-ocr-w64-setup-v5.3.0.20221214.exe
+   C:\> C:\tesseract-ocr-w64-setup-v5.3.0.20221214.exe
 
-    若想調整保存路徑, 選擇將其安裝配置在項目空間 : ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/ 文件夾裏即可.
+   若想調整保存路徑, 選擇將其安裝配置在項目空間 : ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/ 文件夾裏即可.
 
 3. 手動創建配置計算機程式設計語言 Python 解釋器 ( Interpreter ) 項目 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 的隔離環境 :
 
-    root@localhost:~# /usr/bin/python3 -m venv ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/
+   root@localhost:~# /usr/bin/python3 -m venv ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/
 
 4. 激活計算機程式設計語言 Python 解釋器 ( Interpreter ) 的隔離環境 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 項目 :
 
-    root@localhost:~# ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/activate
+   root@localhost:~# ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/activate
 
 5. 手動配置計算機程式設計語言 Python 解釋器 ( Interpreter ) 的隔離環境 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 項目需要的第三方擴展包, 依照項目空間裏第三方擴展包的列表文檔 ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/packagelist.txt 安裝 :
 
-    root@localhost:~# ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/pip.exe install --requirement ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/packagelist.txt
+   root@localhost:~# ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/pip.exe install --requirement ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/packagelist.txt
 
 6. 以上全部配置完畢, 即可在作業系統 ( Operating System : Linux-Ubuntu , Windows ) 的控制臺命令列人機交互介面窗口 ( Ubuntu-bash , Windows-bat ) 使用如下指令, 啓動運行 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 項目 :
 
-    root@localhost:~# ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/python3.exe ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/main.py
+   root@localhost:~# ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/python3.exe ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/main.py is_window=True is_Concurrent=Multi-Threading
+
+   其中 :
+
+      參數 is_window 表示
+
+      參數 is_Concurrent 表示
 
 ![]()
 
