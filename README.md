@@ -1,8 +1,8 @@
 ## Computer Automated Measurement , Optical Character Recognition
 #### Computer Automated Measurement using Intel-OpenCV ( Open Source Computer Vision Library ) and HP-Google-Tesseract ( Optical Character Recognition ).
 #### Graphical User Interface using Python tkinter.
-#### Intel OpenCV ( Open Source Computer Vision Library ) x86_64 version 4.8.1.78
-#### HP Google Tesseract ( Optical Character Recognition ) x86_64 version 5.0.0.20190623
+#### Intel OpenCV ( Open Source Computer Vision Library ) 4.8.1.78
+#### HP Google Tesseract ( Optical Character Recognition ) 5.0.0
 #### Python tkinter 3.12.4
 #### 量表 ( Scale ) 數據識別, 使用 Intel OpenCV 和 HP Google Tesseract 和 Python tkinter 製作的, 計算機輔助測量 ( Computer Automated Measurement ) 的圖形化工具.
 ---
