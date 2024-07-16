@@ -105,8 +105,8 @@ https://github.com/python/cpython.git
 
 Intel OpenCV ( Open Source Computer Vision Library ) - 4.8.1.78
 
-[作業系統 ( Operating system ) 之 Microsoft Windows 官方網站](https://www.microsoft.com/zh-tw/windows): 
-https://www.microsoft.com/zh-tw/windows
+[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 官方網站](https://opencv.org/): 
+https://opencv.org/
 
 HP Google Tesseract ( Optical Character Recognition ) - 5.4.1
 
