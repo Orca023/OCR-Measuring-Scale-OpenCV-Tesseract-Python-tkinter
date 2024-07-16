@@ -2,18 +2,15 @@
 #### Computer Automated Measurement using Intel-OpenCV ( Open Source Computer Vision Library ) and HP-Google-Tesseract ( Optical Character Recognition ).
 #### Graphical User Interface using Python tkinter.
 #### Intel OpenCV ( Open Source Computer Vision Library ) 4.8.1.78
-#### HP Google Tesseract ( Optical Character Recognition ) 5.0.0
+#### HP Google Tesseract ( Optical Character Recognition ) 5.0.0.20190623
 #### Python tkinter 3.12.4
 #### 量表 ( Scale ) 數據識別, 使用 Intel OpenCV 和 HP Google Tesseract 和 Python tkinter 製作的, 計算機輔助測量 ( Computer Automated Measurement ) 的圖形化工具.
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
-OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter
-量表數據識別 , 機器測量 , 計算機視覺 , Scale , Measuring , Optical Character Recognition , OpenCV , Tesseract , Python , tkinter
-
-項目使用了 codeproject 網站提供的第三方擴展 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 三個類模組.
-
-[第三方擴展類模組提供網站 codeproject 裏的 Automate Chrome or Edge using VBA 庫 ( Tips ) 官方説明頁](https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA): 
-https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
+使用計算機視覺 ( Optical Character Recognition ) 的方法, 識別量表 ( Scale ) 資訊, 使用計算機輔助測量 ( Computer Automated Measurement ) 的方法, 識別計算量表 ( Scale ) 測量值數據.
+其中, 量表 ( Scale ) 圖片 ( Image ) 降噪分割使用第三方 Intel OpenCV ( Open Source Computer Vision Library ) 工具包.
+其中, 量表 ( Scale ) 圖片 ( Image ) 識別使用第三方 HP Google Tesseract ( Optical Character Recognition ) 工具包.
+圖形化人機交互介面 ( Graphical User Interface ) 使用 Python tkinter 工具包.
 </p>
 
 ---
