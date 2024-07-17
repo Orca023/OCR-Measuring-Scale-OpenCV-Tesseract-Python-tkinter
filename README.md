@@ -153,10 +153,10 @@ https://opencv.org/
 [圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 預編譯二進位版官方合集](https://opencv.org/releases/): 
 https://opencv.org/releases/
 
-[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版 Windows 系統官方下載頁](https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-windows.exe): 
+[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版 Windows 系統預編譯二進位版官方下載頁](https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-windows.exe): 
 https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-windows.exe
 
-[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版 Android 系統官方下載頁](https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-android-sdk.zip): 
+[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版 Android 系統預編譯二進位版官方下載頁](https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-android-sdk.zip): 
 https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-android-sdk.zip
 
 [圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版官方説明頁](https://docs.opencv.org/4.10.0/): 
@@ -169,6 +169,21 @@ HP Google Tesseract ( Optical Character Recognition ) - 5.4.1
 
 [圖形識別工具包 HP Google Tesseract ( Optical Character Recognition ) 官方網站](https://code.google.com/p/tesseract-ocr/): 
 https://code.google.com/p/tesseract-ocr/
+
+[圖形識別工具包 HP Google Tesseract ( Optical Character Recognition ) 曼海姆大學 ( University of Mannheim ) 封裝 Windows x86_64 預編譯二進位版下載頁](https://github.com/UB-Mannheim/tesseract/releases/download/v5.4.0.20240606/tesseract-ocr-w64-setup-5.4.0.20240606.exe): 
+https://github.com/UB-Mannheim/tesseract/wiki
+
+[圖形識別工具包 HP Google Tesseract ( Optical Character Recognition ) 曼海姆大學 ( University of Mannheim ) 封裝 Windows x86 預編譯二進位版下載頁](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w32-setup-v5.3.0.20221214.exe): 
+https://digi.bib.uni-mannheim.de/tesseract/
+
+[圖形識別工具包 HP Google Tesseract ( Optical Character Recognition ) 官方示例説明頁](https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html#simplest-invocation-to-ocr-an-image): 
+https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html#simplest-invocation-to-ocr-an-image
+
+[圖形識別工具包 HP Google Tesseract ( Optical Character Recognition ) 官方 GitHub 網站倉庫](https://github.com/tesseract-ocr/tesseract): 
+https://github.com/tesseract-ocr/tesseract.git
+
+[圖形識別工具包 HP Google Tesseract ( Optical Character Recognition ) 適配自然語言包 ( tessdata ) 官方 GitHub 網站倉庫](https://github.com/tesseract-ocr/tessdata): 
+https://github.com/tesseract-ocr/tessdata.git
 
 ---
 
