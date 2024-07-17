@@ -73,13 +73,37 @@ https://www.python.org/
 
 6. 以上全部配置完畢, 即可在作業系統 ( Operating System : Linux-Ubuntu , Windows ) 的控制臺命令列人機交互介面窗口 ( Ubuntu-bash , Windows-bat ) 使用如下指令, 啓動運行 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 項目 :
 
-   root@localhost:~# ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/python3.exe ./OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/main.py is_window=True is_Concurrent=Multi-Threading
+   root@localhost:~# /usr/bin/python3 /home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/main.py is_window=True is_Concurrent=Multi-Threading is_storage_position=Disk is_storage_type=csv input_dir=/home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/inputTest/ outputTest_path=/home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/outputTest/test.csv tesseract_cmd=/home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/tesseract.exe tesseract_tessdata_dir=/home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/share/tessdata tesseract_user_words=/home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/share/tesswords input_tabel_tesseract_config="--psm 3 --oem 3 -l lang=chi_tra+chi_tra_vert+eng+chi_sim+chi_sim_vert" input_measuringRuler_tesseract_config="--psm 3 --oem 3 -l lang=chi_tra+chi_tra_vert+eng+chi_sim+chi_sim_vert"
+
+   root@localhost:~# /home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/python3 /home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/main.py is_window=True is_Concurrent=Multi-Threading is_storage_position=Disk is_storage_type=csv input_dir=/home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/inputTest/ outputTest_path=/home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/outputTest/test.csv tesseract_cmd=/home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/tesseract.exe tesseract_tessdata_dir=/home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/share/tessdata tesseract_user_words=/home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Tesseract-OCR/share/tesswords input_tabel_tesseract_config="--psm 3 --oem 3 -l lang=chi_tra+chi_tra_vert+eng+chi_sim+chi_sim_vert" input_measuringRuler_tesseract_config="--psm 3 --oem 3 -l lang=chi_tra+chi_tra_vert+eng+chi_sim+chi_sim_vert"
 
    其中 :
 
-      參數 is_window 表示
+   參數 /home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/Scripts/python3 表示
 
-      參數 is_Concurrent 表示
+   參數 /home/OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter/main.py 表示
+
+   參數 is_window 表示
+
+   參數 is_Concurrent 表示
+
+   參數 is_storage_position 表示
+
+   參數 is_storage_type 表示
+
+   參數 input_dir 表示
+
+   參數 outputTest_path 表示
+
+   參數 tesseract_cmd 表示
+
+   參數 tesseract_tessdata_dir 表示
+
+   參數 tesseract_user_words 表示
+
+   參數 input_tabel_tesseract_config 表示
+
+   參數 input_measuringRuler_tesseract_config 表示
 
 ![]()
 
