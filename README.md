@@ -153,8 +153,11 @@ https://opencv.org/
 [圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 預編譯二進位版官方合集](https://opencv.org/releases/): 
 https://opencv.org/releases/
 
-[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版官方下載頁](https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-windows.exe): 
+[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版 Windows 系統官方下載頁](https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-windows.exe): 
 https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-windows.exe
+
+[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版 Android 系統官方下載頁](https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-android-sdk.zip): 
+https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-android-sdk.zip
 
 [圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版官方説明頁](https://docs.opencv.org/4.10.0/): 
 https://docs.opencv.org/4.10.0/
