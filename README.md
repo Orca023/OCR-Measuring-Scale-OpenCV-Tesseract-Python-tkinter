@@ -150,6 +150,18 @@ Intel OpenCV ( Open Source Computer Vision Library ) - 4.8.1.78
 [圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 官方網站](https://opencv.org/): 
 https://opencv.org/
 
+[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 預編譯二進位版官方合集](https://opencv.org/releases/): 
+https://opencv.org/releases/
+
+[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版官方下載頁](https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-windows.exe): 
+https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-windows.exe
+
+[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 4.x 版官方説明頁](https://docs.opencv.org/4.10.0/): 
+https://docs.opencv.org/4.10.0/
+
+[圖形處理工具包 Intel OpenCV ( Open Source Computer Vision Library ) 官方 GitHub 網站倉庫](https://github.com/opencv/opencv): 
+https://github.com/opencv/opencv.git
+
 HP Google Tesseract ( Optical Character Recognition ) - 5.4.1
 
 [圖形識別工具包 HP Google Tesseract ( Optical Character Recognition ) 官方網站](https://code.google.com/p/tesseract-ocr/): 
