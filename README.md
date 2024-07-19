@@ -185,10 +185,10 @@ https://github.com/tesseract-ocr/tessdata.git
 
 ---
 
-解釋器 ( Interpreter ) : Python 和圖形處理工具 : Intel OpenCV ( Open Source Computer Vision Library ) , HP Google Tesseract ( Optical Character Recognition ) 預編譯二進制可執行檔 [百度網盤(pan.baidu.com)](https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7) 下載頁: 
-https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7
+解釋器 ( Interpreter ) : Python 和圖形處理工具 : Intel OpenCV ( Open Source Computer Vision Library ) , HP Google Tesseract ( Optical Character Recognition ) 預編譯二進制可執行檔 [百度網盤(pan.baidu.com)](https://pan.baidu.com/s/105-GRdb36Y55mdzjR0Fo1Q?pwd=rvpg) 下載頁: 
+https://pan.baidu.com/s/105-GRdb36Y55mdzjR0Fo1Q?pwd=rvpg
 
-提取碼：1dm7
+提取碼：rvpg
 
 ---
 
