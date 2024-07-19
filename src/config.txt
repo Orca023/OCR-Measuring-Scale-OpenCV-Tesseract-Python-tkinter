@@ -1,0 +1,22 @@
+# configFile=/home/Scale_OCR/src/config.txt
+# configFile=C:/Scale_OCR/src/config.txt
+
+is_window=True
+# is_Concurrent=0
+is_Concurrent=Multi-Threading
+is_storage_position=Disk
+# is_storage_type=txt
+is_storage_type=csv
+tesseract_cmd=C:/Scale_OCR/Tesseract-OCR/tesseract
+tesseract_tessdata_dir=C:/Scale_OCR/Tesseract-OCR/tessdata/chi_tra.traineddata
+tesseract_user_words=C:/Scale_OCR/Tesseract-OCR/tesswords/
+tesseract_user_patterns=
+tesseract_timeout=0.0
+input_dir=C:/Scale_OCR/inputTest/
+inputTest_path=C:/Scale_OCR/inputTest/
+output_dir=C:/Scale_OCR/outputTest/
+outputTest_path=C:/Scale_OCR/outputTest/test.csv
+outputTest_URL=
+time_sleep=0.01
+input_tabel_tesseract_config=--psm 3 --oem 3 -l lang=chi_tra+chi_tra_vert+eng+chi_sim+chi_sim_vert
+input_measuringRuler_tesseract_config=--psm 3 --oem 3 -l lang=chi_tra+chi_tra_vert+eng+chi_sim+chi_sim_vert
