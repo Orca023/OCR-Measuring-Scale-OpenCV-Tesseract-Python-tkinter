@@ -1,0 +1,16 @@
+# configFile=C:/Scale_OCR/config.txt
+
+executableFile=C:/Scale_OCR/Scripts/python.exe
+# executableFile=C:/Python/Python311/python.exe
+# interpreterFile=
+scriptFile=C:/Scale_OCR/src/main.py
+configInstructions=configFile=C:/Scale_OCR/src/config.txt,is_window=True,is_Concurrent=Multi-Threading,is_storage_position=Disk,is_storage_type=csv,tesseract_cmd=C:/Scale_OCR/Tesseract-OCR/tesseract,tesseract_tessdata_dir=C:/Scale_OCR/Tesseract-OCR/tessdata/chi_tra.traineddata,tesseract_user_words=C:/Scale_OCR/Tesseract-OCR/tesswords/,tesseract_user_patterns=,tesseract_timeout=0.0,input_dir=C:/Scale_OCR/inputTest/,inputTest_path=C:/Scale_OCR/inputTest/,output_dir=C:/Scale_OCR/outputTest/,outputTest_path=C:/Scale_OCR/outputTest/test.csv,outputTest_URL=,time_sleep=0.01
+
+
+# configFile=/home/Scale_OCR/config.txt
+
+# executableFile=/home/Scale_OCR/Scripts/python
+# # executableFile=/bin/python3
+# # interpreterFile=
+# scriptFile=/home/Scale_OCR/src/main.py
+# configInstructions=configFile=/home/Scale_OCR/src/config.txt,is_window=True,is_Concurrent=Multi-Threading,is_storage_position=Disk,is_storage_type=csv,tesseract_cmd=/home/Scale_OCR/Tesseract-OCR/tesseract,tesseract_tessdata_dir=/home/Scale_OCR/Tesseract-OCR/tessdata/chi_tra.traineddata,tesseract_user_words=/home/Scale_OCR/Tesseract-OCR/tesswords/,tesseract_user_patterns=,tesseract_timeout=0.0,input_dir=/home/Scale_OCR/inputTest/,inputTest_path=/home/Scale_OCR/inputTest/,output_dir=/home/Scale_OCR/outputTest/,outputTest_path=/home/Scale_OCR/outputTest/test.csv,outputTest_URL=,time_sleep=0.01
