@@ -49,11 +49,11 @@ https://www.python.org/
 
    root@localhost:~# sudo dpkg-deb -R --unpack ./tesseract-ocr_5.3.0-1_amd64.deb ./Scale_OCR/Tesseract-OCR/
 
-   可在 Window10 系統的控制臺命令列人機交互介面窗口 ( Windows-bat ) 使用如下指令, 下載 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
+   可在 Window10 系統的控制臺命令列人機交互介面窗口 ( Windows-cmd ) 使用如下指令, 下載 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
    C:\> wget https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.3.0.20221214.exe
 
-   然後, 在 Window10 系統的控制臺命令列人機交互介面窗口 ( Windows-bat ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
+   然後, 在 Window10 系統的控制臺命令列人機交互介面窗口 ( Windows-cmd ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
    C:\> C:\tesseract-ocr-w64-setup-v5.3.0.20221214.exe
 
@@ -71,7 +71,7 @@ https://www.python.org/
 
    root@localhost:~# ./Scale_OCR/Scripts/pip.exe install --requirement ./Scale_OCR/packagelist.txt
 
-6. 以上全部配置完畢, 即可在作業系統 ( Operating System : Linux-Ubuntu , Windows ) 的控制臺命令列人機交互介面窗口 ( Ubuntu-bash , Windows-bat ) 使用如下指令, 啓動運行 Scale_OCR 項目 :
+6. 以上全部配置完畢, 即可在作業系統 ( Operating System : Linux-Ubuntu , Windows ) 的控制臺命令列人機交互介面窗口 ( Ubuntu-bash , Windows-cmd ) 使用如下指令, 啓動運行 Scale_OCR 項目 :
 
    root@localhost:~# /usr/bin/python3 /home/Scale_OCR/src/main.py configFile=/home/Scale_OCR/src/config.txt is_window=True is_Concurrent=Multi-Threading is_storage_position=Disk is_storage_type=csv tesseract_cmd=/home/Scale_OCR/Tesseract-OCR/tesseract tesseract_tessdata_dir=/home/Scale_OCR/Tesseract-OCR/Tesseract-OCR/tessdata/chi_tra.traineddata tesseract_user_words=/home/Scale_OCR/Tesseract-OCR/tesswords/ tesseract_user_patterns= tesseract_timeout=0.0 inputTest_path=/home/Scale_OCR/inputTest/ outputTest_path=/home/Scale_OCR/outputTest/test.csv outputTest_URL= time_sleep=0.01
 
@@ -99,7 +99,7 @@ https://www.python.org/
 
    參數 outputTest_URL 表示自定義配置用於保存識別結果的資料庫服務器地址 ( URL ) 全名, 取值應爲 URL 字符串.
 
-   參數 time_sleep 表示自定義配置用於識別的量表 ( Scale ) 圖片 ( Image ) 檔等待休眠的間隔時長, 單位 ( Unit ) : 毫秒 ( Millisecond ).
+   參數 time_sleep 表示自定義配置用於識別的量表 ( Scale ) 圖片 ( Image ) 檔等待休眠的間隔時長, 單位 ( Unit ) : 秒 ( Second ).
 
    參數 tesseract_cmd 表示指定第三方庫「Tesseract-OCR」的二進位可執行檔「tesseract.exe」的安裝保存的位置路徑名稱全名字符串 ( 不含擴展名 .exe ).
 
