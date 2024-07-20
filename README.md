@@ -29,13 +29,13 @@ https://www.python.org/
 
 使用 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 説明 :
 
-1. 項目 OCR-Measuring-Scale-OpenCV-Tesseract-Python-tkinter 運行需要 Python 環境, 所以運行之前, 需對作業系統 ( Operating System ) 安裝配置 Python 環境成功方可.
+1. 項目 Scale_OCR 運行依賴計算機程式設計語言 Python 解釋器 ( Interpreter ) 環境, 所以運行之前, 需對作業系統 ( Operating System ) 安裝配置計算機程式設計語言 Python 解釋器 ( Interpreter ) 環境成功方可.
 
-   可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 Python 環境 :
+   可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置計算機程式設計語言 Python 解釋器 ( Interpreter ) 環境 :
 
    root@localhost:~# sudo apt install python3
 
-2. 首先需要下載安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包, 或者, 也可以將其配置保存在項目空間 : ./Scale_OCR/ 文件夾裏.
+2. 首先需要下載安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包, 或者, 也可以將其配置保存在項目空間 : ./Scale_OCR/Tesseract-OCR/ 文件夾裏.
 
    可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 安裝配置 HP Google Tesseract ( Optical Character Recognition ) 工具包 :
 
